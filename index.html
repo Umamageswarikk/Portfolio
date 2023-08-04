@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Uma mageswari k.k - Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c3b01022ab.js" crossorigin="anonymous"></script>
+    </head>    
+    <body>
+        <body id="header">
+            <div class="container">
+                <nav>
+                    <img src="logo.png" class="logo">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work experience">Work Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>   
+                    
+                </nav>  
+                <div class="header-text">
+                    <p><span>Student</span></p>
+                    <div class="row">
+                        <div class="header-col-1">
+                            <h1> Hi! I'm <span>Uma Mageswari k.k</span>, <br> From India </h1>
+                        </div>
+                        <div class="header-col-2">
+                            <img src="animation.gif" style="width:250px;height:250px;">
+                        </div>
+                
+                    </div>   
+                </div>
+            </div>
+        </body>   
+        <div id="About">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="photo_480x534.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p class="paragraph">
+                            Hi!, I am Uma Mageswari K.K <br>I'm a student of Christ University, Banglore. <br>I want to pursue my career in field of IT.<br>
+                        </p> 
+                        <div class="tab-titles">
+                            <p class="tab-links" onclick="opentab('Hobbies')">Hobbies</p>
+                            <p class="tab-links" onclick="opentab('Achievements')">Achievements</p>
+                        </div> 
+                        <div class="tab-contents" id="Hobbies">
+                            <ul>
+                                <li><span>Drawing</span><br>Pencil Shading and Sketching</li>
+                                <li><span>Dancing</span><br>Classical Dancer</li>
+                                <li><span>Extra curricular activities</span><br>Ncc-Airwing cadet</li>
+                            </ul>    
+                      
+                        </div>  
+                    
+                    
+                    
+                    <div class="tab-contents active-tab" id="Achievements">
+                        <ul>
+                            <li><span>Ncc c-cert</span><br>A grade holder</li>
+                            <li><span>Topper - French</span><br>During BSc Physics at Madras Christian College</li>
+                            <li><span>School Topper</span><br>Physics in Higer Secondary</li>
+                            <li><span>Interschool</span><br>first prize in Interschool Glass Painting</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+                
+                    
+        </div>
+       
+        <!-----Work experience----->
+        <div id="Work experience">
+            <div class="container">
+                <h1 class="sub-title">My Work experience</h1>
+                <div class="list">
+                    <div>
+                        <i class="fa-solid fa-handshake"></i>
+                        <h2>Intership</h2>
+                        <p>Worked as an Intern in Neo-Science Labs. <br>Have experience in handling Gas Chromatography,<br>Polarimeter,UV Visible Spectrophotometer</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-handshake"></i>
+                        <h2>NCC Volunteer</h2>
+                        <p> Volunteered in Ncc for 3 years.<br> Had experience in Managing resources,<br>Commanding a squad. Have experienced flying<br> Virus SW-80 Microlight Aircraft.</p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div id="Education">
+            <div class="container">
+                <h1 class="sub-title">My Education</h1>
+                <div class="list_1">
+                    <div>
+                        <i class="fab fa-app-store"></i>
+                        <h3>Post-graduation</h3>
+                        <p> MCA at Christ University,Banglore.</p>
+                    </div>
+                    <div>
+                        <i class="fab fa-app-store"></i>
+                        <h3>Under-graduation</h3>
+                        <p>BSc Physics at Madras Christian College, Chennai</p>
+                    </div>
+                    <div>
+                        <i class="fab fa-app-store"></i>
+                        <h3>Schooling</h3>
+                        <p>Alwin Memorial Public School, Chennai</p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        
+        <div id="contact">
+            <div class="contianer">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="subtitle">Contact Me</h1>
+                        <p><i class="fas fa-paper-plane"></i>kk.umamageswari@gmail.com</p>
+                        <p><i class="fa-solid fa-phone-volume"></i>7904456026</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/uma-mageswari-kk-24b57b218/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/Umamageswarikk"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="Uma's Resume.pdf" download class="btn"><i class="fa-solid fa-download"></i> Download CV</a>
+
+                    </div>
+                    <div class="Contact-Right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="Submit" class="btn">Submit</button>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+                
+            }
+        </script>
+        
+    </body>
+              
+</html>   
